@@ -5,7 +5,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import controller.LoginInstituicao;
 
@@ -20,11 +19,6 @@ public class doPostLoginInstituicao extends HttpServlet {
         String password = request.getParameter("password");
         
         if(LoginInstituicao.checkUser(username, password)) {
-        	
-        	HttpSession session = request.getSession(true);
-        	session.putValue("username", username);
-        	session.putValue("password", password);
-        	        
          
         	out.println("Sucess");
             //RequestDispatcher rs = request.getRequestDispatcher("Welcome");
