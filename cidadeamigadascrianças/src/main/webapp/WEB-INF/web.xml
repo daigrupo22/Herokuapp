@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>cidadeamigadascrianças</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>doGetAtividade</servlet-name>
+		<servlet-class>doGetAtividade</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doGetAtividade</servlet-name>
+		<url-pattern>/atividade</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doGetComentario</servlet-name>
+		<servlet-class>doGetComentario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doGetComentario</servlet-name>
+		<url-pattern>/comentario</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doGetCrianca</servlet-name>
+		<servlet-class>doGetCrianca</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doGetCrianca</servlet-name>
+		<url-pattern>/crianca</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doGetInstituicao</servlet-name>
+		<servlet-class>doGetInstituicao</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doGetInstituicao</servlet-name>
+		<url-pattern>/instituicao</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doGetSugestao</servlet-name>
+		<servlet-class>doGetSugestao</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doGetSugestao</servlet-name>
+		<url-pattern>/sugestao</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doPostAtividade</servlet-name>
+		<servlet-class>doPostAtividade</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPostAtividade</servlet-name>
+		<url-pattern>/inseriratividade</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doPostComentario</servlet-name>
+		<servlet-class>doPostComentario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPostComentario</servlet-name>
+		<url-pattern>/inserircomentario</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doPostCrianca</servlet-name>
+		<servlet-class>doPostCrianca</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPostCrianca</servlet-name>
+		<url-pattern>/inserircrianca</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>doPostInstituicao</servlet-name>
+		<servlet-class>doPostInstituicao</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPostInstituicao</servlet-name>
+		<url-pattern>/inseririnstituicao</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doPostSugestao</servlet-name>
+		<servlet-class>doPostSugestao</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPostSugestao</servlet-name>
+		<url-pattern>/inserirsugestao</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doPutAtividade</servlet-name>
+		<servlet-class>doPutAtividade</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPutAtividade</servlet-name>
+		<url-pattern>/atualizaratividade</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>doPutCrianca</servlet-name>
+		<servlet-class>doPutCrianca</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPutCrianca</servlet-name>
+		<url-pattern>/atualizarcrianca</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>doPutInstituicao</servlet-name>
+		<servlet-class>doPutInstituicao</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPutInstituicao</servlet-name>
+		<url-pattern>/atualizarinstituicao</url-pattern>
+	</servlet-mapping>
+	
+
+ <servlet>
+		<servlet-name>doPutMaterial</servlet-name>
+		<servlet-class>doPutMaterial</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPutMaterial</servlet-name>
+		<url-pattern>/atualizarmaterial</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+        <servlet-name>doPostLoginCrianca</servlet-name>
+        <servlet-class>doPostLoginCrianca</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doPostLoginCrianca</servlet-name>
+        <url-pattern>/loginC</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>doPostLoginInstituicao</servlet-name>
+        <servlet-class>doPostLoginInstituicao</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doPostLoginInstituicao</servlet-name>
+        <url-pattern>/loginI</url-pattern>
+    </servlet-mapping>
+    
+        
+    <servlet>
+        <servlet-name>doGetSugestaoTudo</servlet-name>
+        <servlet-class>doGetSugestaoTudo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doGetSugestaoTudo</servlet-name>
+        <url-pattern>/tudosugestao</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>doGetComentarioTudo</servlet-name>
+        <servlet-class>doGetComentarioTudo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doGetComentarioTudo</servlet-name>
+        <url-pattern>/tudocomentario</url-pattern>
+    </servlet-mapping>
+    
+  
+    
+    
+
+</web-app>
