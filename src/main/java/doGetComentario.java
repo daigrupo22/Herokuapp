@@ -18,8 +18,9 @@ public class doGetComentario extends HttpServlet {
 			throws IOException, ServletException {
 		PrintWriter out = resultado.getWriter();
 		resultado.setContentType("application/json");
-		// resultado.setCharacterEncoding("UTF-8");
-
+		resultado.setContentType("text/json; charset=utf-8");
+        pedido.setCharacterEncoding("UTF-8");
+        
 		Comentario comentario = new Comentario();
 		String id_comentario = pedido.getParameter("comentario");
 		int id_comentario2 = Integer.valueOf(id_comentario);

@@ -16,7 +16,8 @@ public class doPostComentario extends HttpServlet {
 	protected void doGet(HttpServletRequest pedido, HttpServletResponse resultado) throws ServletException, IOException {
         PrintWriter out = resultado.getWriter();
         resultado.setContentType("application/json");
-        //resultado.setCharacterEncoding("UTF-8");
+        resultado.setContentType("text/json; charset=utf-8");
+        pedido.setCharacterEncoding("UTF-8");
         out.flush();
     }
 	 protected void doPost(HttpServletRequest pedido, HttpServletResponse resultado) throws ServletException, IOException {

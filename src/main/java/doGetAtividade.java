@@ -20,7 +20,8 @@ public class doGetAtividade extends HttpServlet {
         
 		PrintWriter out = resultado.getWriter();
         resultado.setContentType("application/json");
-        //resultado.setCharacterEncoding("UTF-8");
+        resultado.setContentType("text/json; charset=utf-8");
+        pedido.setCharacterEncoding("UTF-8");
 	
         Atividade ativ = new Atividade();
         String id_atividade = pedido.getParameter("ativ");

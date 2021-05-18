@@ -18,7 +18,8 @@ public class doGetInstituicao extends HttpServlet {
 			throws IOException, ServletException {
 		PrintWriter out = resultado.getWriter();
 		resultado.setContentType("application/json");
-		// resultado.setCharacterEncoding("UTF-8");
+		resultado.setContentType("text/json; charset=utf-8");
+        pedido.setCharacterEncoding("UTF-8");
 
 		Instituicao instituicao = new Instituicao();
 		String id_instituicao = pedido.getParameter("instituicao");
