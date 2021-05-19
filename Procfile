@@ -1,1 +1,1 @@
-web: java -jar C:\Users\TIAGO SOUSA\Desktop\Nova pasta/target/Mavencidadeamiga.jar
+web: node index.js
