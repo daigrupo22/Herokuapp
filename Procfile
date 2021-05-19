@@ -1,1 +1,1 @@
-web: java -jar target/java-getting-started-1.0.jar
+web: java -jar C:\Users\TIAGO SOUSA\Desktop\Nova pasta/target/Mavencidadeamiga.jar
