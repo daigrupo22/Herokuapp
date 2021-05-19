@@ -1,1 +1,1 @@
-web: java -jar Herokuapp/frontend/architectui-html-free/architectui-html-free/index.html/target/Herokuapp.jar
+web: java -jar Herokuapp/frontend/architectui-html-free/architectui-html-free/index.html/target/DAIDAIDAI.jar
