@@ -1,1 +1,1 @@
-web: node index.js
+web: java -jar Herokuapp/frontend/architectui-html-free/architectui-html-free/index.html/target/Herokuapp.jar
