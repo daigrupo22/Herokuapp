@@ -11,7 +11,7 @@
 
   <name>Mavencidadeamiga Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://cidadeamiga.herokuapp.com</url>
+  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,6 +33,15 @@
     <version>2.3</version>
     <scope>provided</scope>
 </dependency>
+
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>5.1.4.BUILD-SNAPSHOT</version>
+    <scope>compile</scope>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/org.json/json -->
 <dependency>
     <groupId>org.json</groupId>
@@ -65,36 +74,7 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
-        <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-dependency-plugin</artifactId>
-         <version>3.0.2</version>
-        <executions><execution>
-<phase>package</phase>
-<goals><goal>copy</goal></goals>
-
-<configuration>
-
-<artifactItems>
-
-<artifactItem>
-
-<groupId>com.github.jsimone</groupId> <artifactId>webapp-runner</artifactId>
-
-<version>8.5.31.0</version>
-
-<destFileName>webapp-runner.jar</destFileName>
-
-</artifactItem>
-
-</artifactItems>
-
-</configuration>
-
-</execution>
-
-</executions>
-               </plugin>
+        
         
         
         <plugin>
