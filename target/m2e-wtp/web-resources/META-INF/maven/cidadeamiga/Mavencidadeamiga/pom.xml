@@ -33,6 +33,7 @@
     <version>2.3</version>
     <scope>provided</scope>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.json/json -->
 <dependency>
     <groupId>org.json</groupId>
@@ -65,14 +66,6 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
-        
-        
-        
-        
-        
-   
-        
-        
         
         
         
