@@ -1,1 +1,1 @@
-web: java -jar Herokuapp/frontend/architectui-html-free/architectui-html-free/index.html/target/DAIDAIDAI.jar
+web: java $JAVA_OPTS -jar target/dependecy/webapp-runner.jar --port $PORT target/*.war
